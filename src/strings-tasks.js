@@ -185,7 +185,7 @@ function removeLastOccurrences(str, value) {
 }
 
 /**
- * Calculate the sum of character codes of the given string.
+ *  Calculate the sum of character codes of the given string.;
  *
  * @param {string} str - The input string.
  * @return {number} - The sum of character codes of the string.
@@ -402,8 +402,8 @@ function getStringFromTemplate(firstName, lastName) {
  *   extractNameFromTemplate('Hello, John Doe!') => 'John Doe'
  *   extractNameFromTemplate('Hello, Chuck Norris!') => 'Chuck Norris'
  */
-function extractNameFromTemplate(/* value */) {
-  throw new Error('Not implemented');
+function extractNameFromTemplate(value) {
+  return value.split(' ').slice(1, 4).join(' ').replace(/!/g, '');
 }
 
 /**
